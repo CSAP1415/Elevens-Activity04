@@ -63,6 +63,13 @@ public class Deck {
 	 */
 	public void shuffle() {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 4 *** */
+		Card temp;
+ 		for(int k=cards.size()-1; k>=0; k--) {
+ 		Random random=new Random();
+ 		int r=random.nextInt(cards.size());
+ 		temp=cards.get(k);
+ 		cards.set(k, cards.get(r));
+ 		cards.set(r, temp); }
 	}
 
 	/**
